@@ -11,6 +11,7 @@ body{
  text-align: center;
  color: rgb(166, 210, 249);
  margin-top: 40px;
+ animation: countdown 11s ease-in;
 }
 h1{
  font-weight: bold;
@@ -18,7 +19,8 @@ h1{
 }
 .conclusion, .statement {
  text-align: center;
- color: aqua;
+ color: rgb(166, 210, 249);
+ animation: line 11s ease-in;
 }
 .timer{
  background-color: rgb(1, 1, 72);
@@ -26,8 +28,7 @@ h1{
  border-style: double;
  height: 100vh;
  width: 100vw;
- animation: timer 11s ease-in;
- 
+ animation: timer 11s ease-in-out;
 }
 @keyframes timer{
  from{
@@ -35,5 +36,24 @@ h1{
  }
  to{
   height: 100vh;
+ }
+}
+@keyframes countdown{
+ 0% {
+  color: rgb(1, 1, 72)
+ }
+ 50% {
+  color: rgb(166, 210, 249)
+ }
+ 100% {
+  color: aqua
+ }
+}
+@keyframes line{
+ 0% {
+  color: aqua
+ }
+ 100% {
+  color: rgb(166, 210, 249)
  }
 }

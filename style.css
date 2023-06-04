@@ -1,0 +1,39 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+body{
+ background-color: aqua;
+}
+#countdown{
+ font-size: 500px;
+ text-align: center;
+ color: rgb(166, 210, 249);
+ margin-top: 40px;
+}
+h1{
+ font-weight: bold;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.conclusion, .statement {
+ text-align: center;
+ color: aqua;
+}
+.timer{
+ background-color: rgb(1, 1, 72);
+ border-color: black;
+ border-style: double;
+ height: 100vh;
+ width: 100vw;
+ animation: timer 11s ease-in;
+ 
+}
+@keyframes timer{
+ from{
+  height: 1vh;
+ }
+ to{
+  height: 100vh;
+ }
+}
